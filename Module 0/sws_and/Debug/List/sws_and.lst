@@ -1,0 +1,127 @@
+###############################################################################
+#
+# IAR C/C++ Compiler V6.50.2.806 for Atmel AVR            10/Feb/2015  19:08:43
+# Copyright 1996-2015 IAR Systems AB.
+# Standalone license - IAR Embedded Workbench 4K Kickstart edition for Atmel AVR 6.50
+#
+#    Source file  =  C:\Users\Jay\Documents\Projects\Module 0\sws_and\sws_and.c
+#    Command line =  
+#        "C:\Users\Jay\Documents\Projects\Module 0\sws_and\sws_and.c"
+#        --cpu=m128 -ms -o "C:\Users\Jay\Documents\Projects\Module
+#        0\sws_and\Debug\Obj\" -lCN "C:\Users\Jay\Documents\Projects\Module
+#        0\sws_and\Debug\List\" -y --initializers_in_flash --no_cse --no_inline
+#        --no_code_motion --no_cross_call --no_clustering --no_tbaa --debug
+#        -DENABLE_BIT_DEFINITIONS -e --eeprom_size 4096 --clib -On
+#    List file    =  
+#        C:\Users\Jay\Documents\Projects\Module
+#        0\sws_and\Debug\List\sws_and.lst
+#    Object file  =  
+#        C:\Users\Jay\Documents\Projects\Module 0\sws_and\Debug\Obj\sws_and.r90
+#
+###############################################################################
+
+C:\Users\Jay\Documents\Projects\Module 0\sws_and\sws_and.c
+      1          /*
+      2          Name: Suphasith Usdonvudhikai 109219981
+      3          Class: ESE 381 Lab Sec 01 
+      4          Module 0 
+      5          File: sws_AND.c
+      6          Description: implement 4 2-input AND gates. Inputs: 8-bit switches (PD7-PD4 AND PD3-PD0); Outputs: LED bargraph
+      7          */
+      8          
+      9          #include <iom128.h>
+
+   \                                 In  segment ABSOLUTE, at 0x30
+   \   union <unnamed> volatile __io _A_PIND
+   \                     _A_PIND:
+   \   00000000                      DS8 1
+
+   \                                 In  segment ABSOLUTE, at 0x31
+   \   union <unnamed> volatile __io _A_DDRD
+   \                     _A_DDRD:
+   \   00000000                      DS8 1
+
+   \                                 In  segment ABSOLUTE, at 0x32
+   \   union <unnamed> volatile __io _A_PORTD
+   \                     _A_PORTD:
+   \   00000000                      DS8 1
+
+   \                                 In  segment ABSOLUTE, at 0x37
+   \   union <unnamed> volatile __io _A_DDRB
+   \                     _A_DDRB:
+   \   00000000                      DS8 1
+
+   \                                 In  segment ABSOLUTE, at 0x38
+   \   union <unnamed> volatile __io _A_PORTB
+   \                     _A_PORTB:
+   \   00000000                      DS8 1
+     10          
+
+   \                                 In  segment CODE, align 2, keep-with-next
+     11          int main(void)
+   \                     main:
+     12          {
+     13            char temp0;
+     14            
+     15            DDRD = 0x00;                          //setup PORTD as inputs     
+   \   00000000   E000               LDI     R16, 0
+   \   00000002   BB01               OUT     0x11, R16
+     16            PORTD = 0xFF;                         //turn on pull-ups for PORTD
+   \   00000004   EF0F               LDI     R16, 255
+   \   00000006   BB02               OUT     0x12, R16
+     17            DDRB = 0xFF;                          //setup PORTB as outputs
+   \   00000008   EF0F               LDI     R16, 255
+   \   0000000A   BB07               OUT     0x17, R16
+     18            
+     19            while(1)
+     20            {
+     21              temp0 = PIND; 
+   \                     ??main_0:
+   \   0000000C   B300               IN      R16, 0x10
+   \   0000000E   2F10               MOV     R17, R16
+     22              char temp1 = temp0 >> 4;               //shifts the high nibble to the low nibble and stores it 
+   \   00000010   2F01               MOV     R16, R17
+   \   00000012   9502               SWAP    R16
+   \   00000014   700F               ANDI    R16, 0x0F
+     23              temp0 = temp0 & temp1;                //AND operation
+   \   00000016   2310               AND     R17, R16
+     24              PORTB = ~temp0;                       //outputs to PORTB active low
+   \   00000018   2F21               MOV     R18, R17
+   \   0000001A   9520               COM     R18
+   \   0000001C   BB28               OUT     0x18, R18
+   \   0000001E   CFF6               RJMP    ??main_0
+   \   00000020                      REQUIRE _A_DDRD
+   \   00000020                      REQUIRE _A_PORTD
+   \   00000020                      REQUIRE _A_DDRB
+   \   00000020                      REQUIRE _A_PIND
+   \   00000020                      REQUIRE _A_PORTB
+     25            }
+     26          }
+
+   Maximum stack usage in bytes:
+
+   RSTACK Function
+   ------ --------
+      2   main
+
+
+   Segment part sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       1  _A_DDRB
+       1  _A_DDRD
+       1  _A_PIND
+       1  _A_PORTB
+       1  _A_PORTD
+      32  main
+
+ 
+  5 bytes in segment ABSOLUTE
+ 32 bytes in segment CODE
+ 
+ 32 bytes of CODE memory
+  0 bytes of DATA memory (+ 5 bytes shared)
+
+Errors: none
+Warnings: none

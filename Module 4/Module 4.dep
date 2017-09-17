@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>1548607483</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_dog_driver.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\simulated_ntc (1).r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\simulated_ntc (1).pbi</file>
+      <file>$PROJ_DIR$\lcd_dog_driver.h</file>
+      <file>$PROJ_DIR$\..\Module 3\lcd_dog_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\Downloads\lcd_dog_driver.h</file>
+      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+      <file>$TOOLKIT_DIR$\inc\avr_macros.h</file>
+      <file>$PROJ_DIR$\..\..\..\Downloads\simulated_ntc (1).c</file>
+      <file>$PROJ_DIR$\functions.c</file>
+      <file>$TOOLKIT_DIR$\src\template\cfg3soim.xcl</file>
+      <file>$PROJ_DIR$\Debug\Exe\Module 4.d90</file>
+      <file>$TOOLKIT_DIR$\lib\clib\cl3s-ec_mul.r90</file>
+      <file>$PROJ_DIR$\fsm.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\functions.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\Module 4.pbd</file>
+      <file>$TOOLKIT_DIR$\inc\iomacro.h</file>
+      <file>$TOOLKIT_DIR$\inc\iom128.h</file>
+      <file>$PROJ_DIR$\..\..\..\Downloads\ADC161S626_driver.h</file>
+      <file>$PROJ_DIR$\..\Module 3\lcd_dog_driver.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\fsm.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\functions.pbi</file>
+      <file>$PROJ_DIR$\functions.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\fsm.r90</file>
+      <file>$TOOLKIT_DIR$\inc\bitdefinitions\iom128.inc</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_dog_driver.r90</file>
+      <file>$TOOLKIT_DIR$\src\template\cfgm128a.xcl</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\..\Module 3\lcd_dog_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 0</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 25</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 7 17 24 19 6 16</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 17 16 24 19 7 6</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Downloads\simulated_ntc (1).c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 2</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 1</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 18 7 6 5 24 16 17</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\functions.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 21</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 14</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 7 6 3 17 22 24 16</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 17 16 24 6 7 22 3</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\Module 4.d90</name>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 26 10 23 14 25 12</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\fsm.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 20</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 23</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 16 7 24 6 3 17</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 17 16 24 6 7 3</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 11</file>
+        </tool>
+      </outputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>XLINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

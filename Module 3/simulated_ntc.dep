@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>2147266309</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\Module 2\lcd_dog_driver.c</file>
+      <file>$PROJ_DIR$\ADC161S626_driver.c</file>
+      <file>$PROJ_DIR$\ADC161S626_driver.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\ADC161S626_driver.r90</file>
+      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+      <file>$TOOLKIT_DIR$\inc\iomacro.h</file>
+      <file>$TOOLKIT_DIR$\inc\avr_macros.h</file>
+      <file>$TOOLKIT_DIR$\lib\clib\cl3s-ec_mul.r90</file>
+      <file>$PROJ_DIR$\lcd_dog_driver.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\simulated_ntc.pbi</file>
+      <file>$TOOLKIT_DIR$\src\template\cfgm128.xcl</file>
+      <file>$PROJ_DIR$\Debug\Obj\ADC161S626_driver.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\bitdefinitions\iom128.inc</file>
+      <file>$PROJ_DIR$\Debug\Obj\simulated_ntc.r90</file>
+      <file>$TOOLKIT_DIR$\src\template\cfg3soim.xcl</file>
+      <file>$PROJ_DIR$\Debug\Obj\simulated_ntc.pbd</file>
+      <file>$PROJ_DIR$\simulated_ntc.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_dog_driver.r90</file>
+      <file>$PROJ_DIR$\Debug\Exe\simulated_ntc.d90</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_dog_driver.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\iom128.h</file>
+      <file>$PROJ_DIR$\..\Module 2\lcd_dog_driver.h</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 18</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Module 2\lcd_dog_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 19</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 17</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 6 20 12 21 4 5</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 20 5 12 21 6 4</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\ADC161S626_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 11</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 3</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 20 6 4 12 5 2</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 2 6 20 5 12 4</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\simulated_ntc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 13</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 5 2 6 12 4 8 20</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 20 5 12 4 6 8 2</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\simulated_ntc.d90</name>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 10 14 3 17 13 7</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>XLINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

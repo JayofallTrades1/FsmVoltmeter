@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\..\Module 1\Kpd2dsp.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Module 2.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Module2ver2.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\RotaryEncoder.ewp</path>
+  </project>
+  <batchBuild/>
+</workspace>
+
+

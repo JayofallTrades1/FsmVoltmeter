@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <configuration>
+    <name>Debug</name>
+    <toolchain>
+      <name>AVR</name>
+    </toolchain>
+    <debug>1</debug>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <toolchain>
+      <name>AVR</name>
+    </toolchain>
+    <debug>0</debug>
+  </configuration>
+  <file>
+    <name>$PROJ_DIR$\ADC161_display_main.c</name>
+  </file>
+  <file>
+    <name>$PROJ_DIR$\ADC161S626_driver.c</name>
+  </file>
+  <file>
+    <name>$PROJ_DIR$\ADC161S626_driver.h</name>
+  </file>
+  <file>
+    <name>$PROJ_DIR$\..\Module 2\lcd_dog_driver.c</name>
+  </file>
+  <file>
+    <name>$PROJ_DIR$\..\Module 2\lcd_dog_driver.h</name>
+  </file>
+</project>
+
+
